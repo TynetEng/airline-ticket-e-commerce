@@ -1,0 +1,102 @@
+$mainColor: #0061AB;
+$subColor: #D0DAE0;
+$branchColor: #FFFFFF;
+$textColor: grey;
+.container-fluid, .row{
+    margin: 0px;
+    padding: 0px;
+}
+.parent{
+    background-color: whitesmoke;
+}
+#airlineDetails{
+    padding-top: 30px;
+    width: 100%;
+    .pull{
+        width: 90%;
+        margin: auto;
+        margin-top: 5px;
+        .main-pull{
+            display: flex !important;
+            justify-content: space-around !important;
+            .sub-pull{
+                line-height: 0.5;
+                .join{
+                    display: flex;
+                    .toAirportBook, .fromAirportBook{
+                        padding-left: 5px;
+                    }
+                }
+                h3{
+                    color: $mainColor;
+                }
+            }
+        }
+        .bookFlight{
+            background-color: $mainColor;
+            border: none;
+            color: $branchColor;
+            padding: 5px 20px;
+            border-radius: 5px;
+            margin-left: 42%;
+            margin-top: 5px;
+        }
+        .economy{
+            margin-left: 10px;
+            width: 10% !important;
+            h5{
+                color: $mainColor;
+                padding-left: -5px;
+            }
+        }
+        .business{
+            width: 10% !important;
+            h5{
+                color: $mainColor;
+            }
+        }
+    }
+}
+@media(max-width:760px){
+    .container-fluid, .row{
+        margin: 0px;
+        padding: 0px;
+    }
+    .parent{
+        width: 100% !important;
+    }
+    #airlineDetails{
+        // .economyPrice, .business{
+        //     width: 100% !important;
+        //     margin-top: 5px;
+        //     h5{
+        //         color: $mainColor;
+        //     }
+        // }
+        // .business{
+        //     margin-left: 0px !important;
+        // }
+        .pull{
+            width: 100%;
+            margin: 0px !important;
+            margin-left: 0px !important;
+            margin-top: 5px !important;
+            .main-pull{
+                display: block !important;
+                width: 100% !important;
+            }
+            .bookFlight{
+                margin-left: 35% !important;
+            }
+            .economy{
+                width: 100% !important;
+                margin-left: 0px;
+            }
+            .business{
+                width: 100% !important;
+                margin-top: 5px;
+            }
+        }
+    }
+    
+}

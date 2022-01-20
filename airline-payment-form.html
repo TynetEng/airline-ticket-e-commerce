@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="airline-payment-form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="main-parent">
+            <div class="atm-card">
+                <div class="number">
+                    <span id="pin-number"></span>
+                </div>
+                <div class="enter">
+                    <div class="show-name">
+                        <span> Card Holder</span>
+                        <h6 id="name"></h6>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div class="show-expiry">
+                        <span> Expires</span>
+                        <p><span id="month-show">MM</span> / <span id="year-show">YY</span></p>
+                    </div>
+                    <div></div>
+    
+    
+    
+                </div>
+    
+            </div>
+            <div class="card card-body parent shadow-sm">
+                <form action="">
+                    <div class="py-2 team">
+                        <div id="num">
+                            <p>Card Number</p>
+                        </div>
+                        <input type="text" class="w-100" id="card-number" required>
+                    </div>
+                    <div class="py-2 team">
+                        <div id="cname">
+                            <p>Card Name</p>
+                        </div>
+                        <input type="text" class="w-100" id="card-name" required>
+                    </div>
+                    <div>
+                        <div class="show">
+                            <span>Expiration Date</span>
+                            <span>CVV</span>
+                        </div>
+    
+                        <div class="fill">
+                            <select name="" id="month" class="me-3" style="padding-left: 5px;">
+                                <option value="">Month</option>
+                                <option value="jan">January</option>
+                                <option value="feb">February</option>
+                                <option value="mar">March</option>
+                                <option value="apr">April</option>
+                                <option value="may">May</option>
+                                <option value="jun">June</option>
+                                <option value="jul">July</option>
+                                <option value="aug">August</option>
+                                <option value="sep">September</option>
+                                <option value="oct">October</option>
+                                <option value="nov">November</option>
+                                <option value="dec">December</option>
+                            </select>
+                            <select name="" id="year" style="padding-left: 5px;">
+                                <option value="">Year</option>
+                                <option value="21">2021</option>
+                                <option value="22">2022</option>
+                                <option value="23">2023</option>
+                                <option value="24">2024</option>
+                                <option value="25">2025</option>
+                                <option value="26">2026</option>
+                                <option value="27">2027</option>
+                                <option value="28">2028</option>
+                                <option value="29">2029</option>
+                                <option value="30">2030</option>
+                            </select>
+                            <div class="cvv" contenteditable="true" style="padding-left: 5px;"></div>
+                        </div>
+                        <button class="btn w-100 validateSubmit" type="submit">SUBMIT</button>
+                    </div>
+                </form>
+                <h6 id="result"></h6>
+                <h6 id="result2"></h6>
+    
+            </div>
+        </div>
+    </div>
+
+    <div class="modal checkout" style="background-color: rgba(225, 225, 225, 0.3);">
+        <div class="modal-dialog x-modal">
+            <div class="modal-content shadow-sm">
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <div class="form-group" id="search">
+                        <h5> You have successfully completed the payment for the flight</h5>
+                    </div>
+                    <div>
+                        <button class="btn w-100 checkoutFinal">CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal checkoutPage" style="background-color: rgba(225, 225, 225, 0.3);">
+        <div class="modal-dialog x-modal">
+            <div class="modal-content shadow-sm">
+                <!-- Modal Body -->
+                <div>
+                    <div class="modal-body">
+                    <div class="form-group" id="search">
+                        <h5> You have successfully booked flight <br> from <span class="fromAirport"></span> to <span class="toAirport"></span></h5>
+                    </div>
+                    <div>
+                        <h3>Details:</h3>
+                        <h6>Full Name : <span class="full-name"></span></h6>
+                        <h6>Date of Departure : <span class="departure-date"></span></h6>
+                        <h6>Reservation Seat Number : <span class="seat-number"></span></h6>
+                        <h6>Flight Class : <span class="flight-class"></span></h6>
+                        <h6>Number of Passenger : <span class="no-pass"></span></h6>
+
+                        <div>
+                            <button class="btn w-100 print">PRINT</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="airline-payment-form.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="airline.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title> Airline E-commerce</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="parent">
+            <div class="main-page">
+                <div class="header shadow-sm">
+                    <div class="navbar navbar-expand-sm container">
+                        <div class="left">
+                            <a href="#" class="navbar-brand">
+                                <img src="./Images/aa-logo.png" alt="">
+                            </a>
+    
+                            <button class="navbar-toggler bell" id="openSideBar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="menu">
+                            <div class="show">
+                                <ul class="navbar-nav">
+                                    <li class="nav-items">
+                                        <a href="#" class="nav-link">
+                                            PLAN TRAVEL
+                                        </a>
+                                    </li>
+                                    <li class="nav-items">
+                                        <a href="#" class="nav-link">
+                                            TRAVEL INFORMATION
+                                        </a>
+                                    </li>
+                                    <li class="nav-items">
+                                        <a href="#" class="nav-link">
+                                            AADVANTAGE
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="head-right">
+                                    <div>
+                                        <button class="awe1" id="log-in">
+                                            <a href="airline2.html"> LOG IN</a>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="awe2">
+                                            <a href="#"> JOIN</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sideBar">
+                            <ul class="navbar-nav">
+                                <li class="nav-items">
+                                    <a href="#" class="nav-link">
+                                        PLAN TRAVEL
+                                    </a>
+                                </li>
+                                <li class="nav-items">
+                                    <a href="#" class="nav-link">
+                                        TRAVEL INFORMATION
+                                    </a>
+                                </li>
+                                <li class="nav-items">
+                                    <a href="#" class="nav-link">
+                                        AADVANTAGE
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="head-right">
+                                <div>
+                                    <button class="awe1" id="log-in">
+                                        <a href="airline2.html"> LOG IN</a>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="awe2">
+                                        <a href="#"> JOIN</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-body ">
+                    <div class="first">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="./Images/American-Airlines-737-Max2.jpg" class="d-block w-100" alt="First Slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./Images/American-Airlines-Economy-Class.jpg" class="d-block w-100" alt="Second Slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./Images/Flight-Attendants-serving-beverages-984x554.jpg" class="d-block w-100" alt="Third Slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./Images/cool-air.jpg" class="d-block w-100" alt="Third Slide">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="main-parent">
+                            <div class="card card-body showdow-sm first-parent">
+                                <div class="mean">
+                                    <div class="teal">
+                                        <h3>Log In</h3>
+                                        <p> You can log in with your Aadvantage number or username <br> and password</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>AAdvantage First Name <span class="bolt">*</span></label>
+                                        <input type="text" class="w-100 username" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Password <span class="bolt">*</span></label>
+                                        <input type="password" class="w-100 log-in-password" placeholder="Minimun of 8 characters with at least 2 digits and a symbol i.e. #,@" required>
+                                    </div>
+                                    <div class="clay">
+                                        <input type="checkbox" required>
+                                        <span>Remember me</span>
+                                    </div>
+                                    <div>
+                                        <button class="logIn w-100" type="submit">LOG IN</button>
+                                    </div>
+                                    <div id="show"></div>
+                                    <div class="pot">
+                                        <div class="in">
+                                            <a href="#">
+                                                American Airlines Privacy Policy
+                                            </a>
+                                            <a href="#">
+                                                Terms and Conditions
+                                            </a>
+                                        </div>
+                                        <div class="in2">
+                                            <a href="#">
+                                                Need an AAdvantage number or password?
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-body showdow-sm first-parent-register">
+                                <div class="mean">
+                                    <div class="teal">
+                                        <h3>Sign In</h3>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>First Name <span class="bolt">*</span></label>
+                                        <input type="text" class="w-100 firstName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Last Name <span class="bolt">*</span></label>
+                                        <input type="text" class="w-100 lastName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email <span class="bolt">*</span></label>
+                                        <input type="email" class="w-100 email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Password <span class="bolt">*</span></label>
+                                        <div class="team">
+                                            <input type="password" class="w-100 inputPass" placeholder="Enter your password" required>
+                                            <i class="fa fa-eye toggleEye"></i>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Phone Number <span class="bolt">*</span></label>
+                                        <input type="text" class="w-100 phone-number" required>
+                                    </div>
+                                    <div class="clay">
+                                        <input type="checkbox">
+                                        <span class="eel">I agree to the terms and conditions of American Airline</span>
+                                    </div>
+                                    <div>
+                                        <button class="signInEnter w-100" type="submit">SIGN IN</button>
+                                    </div>
+                                    <div class="show"></div>
+                                    <div class="show2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <div class="container rain">
+                            <div class="team">
+                                <h6>About American</h6>
+                                <a href="#"><p> About us</p></a>
+                                <a href="#"><p> Career</p></a>
+                                <a href="#"><p> Investor relations</p></a>
+                                <a href="#"><p> Newsroom</p></a>
+                                <a href="#"><p> Legal, privacy, copyrights</p></a>
+                                <a href="#"><p> Envitonmental, social and goverance</p></a>
+                                <a href="#"><p> Combacting human trafficking</p></a>
+                                <a href="#"><p> Browser compability</p></a>
+                                <a href="#"><p> Web accessibility</p></a>    
+                            </div>
+                            <div class="team">
+                                <h6>Help</h6>
+                                <a href="#"><p> Contact American</p></a>
+                                <a href="#"><p> Receipts and refunds</p></a>
+                                <a href="#"><p> FAQs</p></a>
+                                <a href="#"><p> Agency reference</p></a>
+                                <a href="#"><p> Cargo</p></a>
+                                <a href="#"><p> Bag and optional fees</p></a>
+                                <a href="#"><p> Customerservice and contingency plans</p></a>
+                                <a href="#"><p> Conditions of carriage</p></a>
+                            </div>
+                            <div class="team">
+                                <h6>Extra</h6>
+                                <a href="#"><p> Business programs</p></a>
+                                <a href="#"><p> Gift cards</p></a>
+                                <a href="#"><p> American Airlines credit card</p></a>
+                                <a href="#"><p> Trip insurance</p></a>
+                            </div>
+                            <div class="card">
+                                <img src="./Images/AA.card_.AviatorFan.png" alt="">
+                            </div>
+                        </div>
+                        <div class="ream">
+                            <a href="#"><p>Receipts and refunds</p></a>
+                            <a href="#"><p>Bag and optional fees</p></a>
+                            <a href="#"><p>Customer service and contingency plans</p></a>
+                            <a href="#"><p>Conditions of carriage</p></a>
+                            <a href="#"><p>FAQs</p></a>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <div class="container part">
+                            <div class="cent">
+                                <p>@2021 American Airline</p>
+                            </div>
+                            <div class="third-end">
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-facebook bay1"></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-twitter bay2"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-play bay3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            let details =[];
+            $('.sideBar').hide()
+            if(localStorage.getItem('Passenger Details')){
+                let c = localStorage.getItem('Passenger Details')
+                console.log(JSON.parse(c));
+                details = JSON.parse(c)
+            }
+            $('.first-parent').hide()
+            function validatePassword(){
+                let pass = $('.inputPass').val()
+                let regex = /[A-Za-z0-9]{8,20}[#@!$^*]{0,1}/;
+                let check = regex.test(pass);
+
+                if(!check || pass.length < 8){
+                    $('.show').html(`Invalid Password`)
+                }else{
+                    $('.show').html(`Valid Password`)
+                }
+            }
+
+            function validatePhoneNum(){
+                let pnb = $('.phone-number').val()
+                let regex = /[+]{1}[2]{1}[3]{1}[4]{1}[0-9]{10}/; 
+                let confirm = regex.test(pnb);
+
+                if(!confirm || pnb.length > 14 ){
+                    $('.show2').html(`Incorrect Phone Number`)
+                }else{
+                    $('show2').html(`Phone Number Approved`)
+                }
+            }
+
+            $('body').on('click', '.toggleEye', function(){
+                $(this).toggleClass('.toggleEye')
+                $('.inputPass').attr('type') ==='password'? $('.inputPass').attr('type', 'text')  : $('.inputPass').attr('type', 'password') 
+            })
+            $('.signInEnter').click(function(){
+                validatePassword()
+                validatePhoneNum()
+
+                let passengerDetails = {
+                    firstName: $('.firstName').val(),
+                    lastName: $('.lastName').val(),
+                    Email: $('.email').val(),
+                    password: $('.inputPass').val(),
+                    phoneNumber: $('.phone-number').val()
+
+                }
+                details.push(passengerDetails)
+
+                localStorage.setItem('Passenger Details', JSON.stringify(details));
+                let a = localStorage.getItem('Passenger Details') ;
+                console.log(JSON.parse(a));
+                $('.first-parent').show()
+                $('.first-parent-register').hide()
+            })
+            $('.logIn').click(function(){
+                if($('.username').val() != $('.firstName').val() || $('.log-in-password').val() != $('.phone-number').val()){
+                    $('.logIn').attr('disabled', true)
+                    console.log('abc')
+                }
+                else{
+                    window.location.href = './airline-payment-form.html'
+                    console.log(123)
+                }
+                window.location.href = './airline-payment-form.html'
+            })
+            $('#openSideBar').click(function(){
+                $('.sideBar').toggle()   
+            })
+        })
+    </script>
+</body>
+</html>

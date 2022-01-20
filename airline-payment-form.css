@@ -1,0 +1,172 @@
+.container-fluid, .row {
+  margin: 0px;
+  padding: 0px;
+}
+
+.parent {
+  width: 350px;
+  margin: auto;
+  margin-top: 150px;
+  padding-top: 110px;
+  position: relative;
+}
+
+.cvv {
+  border: 1px solid #D0DAE0;
+  width: 60px;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #0061AB;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.show {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fill {
+  display: flex;
+  justify-content: space-between;
+}
+.fill select {
+  border: 1px solid #D0DAE0;
+  border-radius: 5px;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid #D0DAE0;
+}
+
+input:focus {
+  border: 1px solid skyblue;
+  outline: 1px solid skyblue;
+  border-radius: 5px !important;
+}
+
+.team {
+  margin-top: 20px;
+}
+.team p {
+  position: absolute;
+  padding-left: 10px;
+}
+
+.atm-card {
+  width: 320px;
+  margin-left: 38.4% !important;
+  border-radius: 10px;
+  z-index: 1000;
+  margin-top: -130px !important;
+  position: absolute;
+  color: white;
+  height: 220px;
+  background: url("./Images/red.jpeg");
+}
+.atm-card .show-name {
+  padding-top: 170px;
+  padding-left: 10px;
+}
+.atm-card .show-name span {
+  font-size: 15px;
+}
+.atm-card .show-expiry {
+  padding-top: 170px;
+}
+.atm-card .show-expiry span {
+  font-size: 15px;
+  padding-left: -10px !important;
+}
+.atm-card .show-expiry p span {
+  font-size: 14px;
+}
+.atm-card .number {
+  border: 2px solid #D0DAE0;
+  border-radius: 10px;
+  width: 200px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin: auto;
+  margin-top: 110px;
+  margin-left: 10px;
+  position: absolute;
+}
+.atm-card .enter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout {
+  margin: auto;
+  position: absolute;
+}
+.checkout .modal-body {
+  padding-top: -50px !important;
+}
+.checkout .modal-body #search {
+  text-align: center;
+  color: #0061AB;
+}
+.checkout .modal-body .checkoutFinal {
+  background-color: #0061AB;
+  color: #FFFFFF;
+  padding: 5px;
+  border: none;
+  font-weight: bold;
+  margin-top: 4px;
+  border-radius: 3px;
+}
+
+.checkoutPage {
+  margin: auto;
+  position: absolute;
+}
+.checkoutPage .modal-body {
+  padding-top: -50px !important;
+}
+.checkoutPage .modal-body #search {
+  text-align: center;
+  color: #0061AB;
+}
+.checkoutPage .modal-body #search .fromAirport, .checkoutPage .modal-body #search .toAirport {
+  color: #0061AB;
+  font-weight: bold;
+  font-size: 20px;
+}
+.checkoutPage .modal-body .checkoutFinal {
+  background-color: #0061AB;
+  color: #FFFFFF;
+  padding: 5px;
+  border: none;
+  font-weight: bold;
+  margin-top: 4px;
+  border-radius: 3px;
+}
+
+@media (max-width: 760px) {
+  .container-fluid, .row {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .parent {
+    width: 100% !important;
+    margin: 0px;
+    margin-top: 150px;
+  }
+
+  .atm-card {
+    width: 90% !important;
+    margin-left: 5% !important;
+    margin-top: 40px;
+  }
+}
+
+/*# sourceMappingURL=airline-payment-form.css.map */

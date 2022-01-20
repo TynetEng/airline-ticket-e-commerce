@@ -1,0 +1,451 @@
+.container-fluid, .row {
+  padding: 0px;
+  margin: 0px;
+}
+
+.main-page {
+  width: 100%;
+}
+.main-page .header {
+  background-color: #FFFFFF;
+  height: 68px;
+}
+.main-page .header .show {
+  display: flex;
+  margin-left: 35%;
+}
+.main-page .header img {
+  width: 200px;
+}
+.main-page .header ul {
+  color: #0061AB;
+  display: flex;
+}
+.main-page .header .sideBar {
+  background: white;
+  top: 0;
+  left: -3% !important;
+  width: 55%;
+  height: 100vh;
+  position: absolute;
+  z-index: 1000;
+  box-shadow: black;
+  padding: 20px;
+  font-size: 17px;
+}
+.main-page .header .head-right {
+  display: flex;
+}
+.main-page .header .head-right .awe1 {
+  background-color: #0061AB;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+.main-page .header .head-right .awe1 a {
+  text-decoration: none !important;
+  color: #FFFFFF;
+}
+.main-page .header .head-right .awe1:hover {
+  transition: all 1s;
+  animation-timing-function: ease-in;
+  border: 1px solid #0061AB !important;
+  background-color: #FFFFFF;
+}
+.main-page .header .head-right .awe1:hover a {
+  color: #0061AB;
+}
+.main-page .header .head-right .awe2 {
+  border: 1px solid #0061AB;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin-left: 10px;
+  background-color: #FFFFFF;
+}
+.main-page .header .head-right .awe2 a {
+  color: #0061AB;
+  text-decoration: none;
+}
+.main-page .header .head-right .awe2:hover {
+  transition: all 1s;
+  animation-timing-function: ease-in;
+  border: 1px solid #0061AB !important;
+  background-color: #0061AB;
+}
+.main-page .header .head-right .awe2:hover a {
+  color: #FFFFFF;
+}
+.main-page .page-body .first #carouselExampleIndicators .carousel-item, .main-page .page-body .first #carouselExampleIndicators img {
+  height: 17cm;
+  z-index: -11111;
+}
+.main-page .page-body .first .first-front {
+  position: absolute;
+  margin-top: -50%;
+  color: #FFFFFF;
+  margin-left: 10%;
+}
+.main-page .page-body .first .first-front .bab {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  width: 35%;
+  padding: 5px;
+}
+.main-page .page-body .first .first-front .bab input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.main-page .page-body .first .first-front .bab i {
+  color: black;
+}
+.main-page .page-body .first .first-front .bob {
+  background-color: #0061AB;
+  border: none;
+  color: #FFFFFF;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.main-page .page-body .first .first-front .bob:hover {
+  transition: all 1s;
+  animation-timing-function: ease-in;
+  border: 1px solid #0061AB !important;
+  background-color: #FFFFFF;
+  color: #0061AB;
+}
+.main-page .page-body .first .main-parent {
+  margin-left: 35% !important;
+  position: absolute;
+  margin-top: -40%;
+  width: 30%;
+}
+.main-page .page-body .first .main-parent .first-parent .mean {
+  padding: 10px;
+}
+.main-page .page-body .first .main-parent .first-parent .mean .bolt {
+  color: red;
+}
+.main-page .page-body .first .main-parent .first-parent .mean .team {
+  display: flex;
+  width: 100%;
+  border: 1px solid gray;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+.main-page .page-body .first .main-parent .first-parent .mean .team input {
+  border: 0px;
+  width: 95%;
+  outline: 0px;
+}
+.main-page .page-body .first .main-parent .first-parent .mean .team input::placeholder {
+  font-size: 10px;
+}
+.main-page .page-body .first .main-parent .first-parent .mean .team button {
+  border: none;
+  background-color: transparent;
+  padding: 0px !important;
+}
+.main-page .page-body .first .main-parent .first-parent .mean .pass {
+  padding-left: 5px;
+}
+.main-page .page-body .first .main-parent .first-parent .mean .pass::placeholder {
+  font-size: 10px;
+  padding-left: 5px;
+}
+.main-page .page-body .first .main-parent .first-parent .mean .teal {
+  text-align: center;
+}
+.main-page .page-body .first .main-parent .first-parent .mean .teal h3 {
+  color: #0061AB;
+}
+.main-page .page-body .first .main-parent .first-parent .mean .teal p {
+  font-size: 13px;
+}
+.main-page .page-body .first .main-parent .first-parent .mean .clay {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+.main-page .page-body .first .main-parent .first-parent .mean .clay .checkbox {
+  width: 20px;
+  border-radius: 5px;
+  height: 20px;
+  border: 1px solid grey;
+}
+.main-page .page-body .first .main-parent .first-parent .mean .clay span {
+  padding-left: 4px;
+}
+.main-page .page-body .first .main-parent .first-parent .mean .logIn {
+  background-color: #0061AB;
+  color: #FFFFFF;
+  padding: 5px;
+  border: none;
+  font-weight: bold;
+  margin-top: 4px;
+  border-radius: 3px;
+}
+.main-page .page-body .first .main-parent .first-parent .mean .pot {
+  padding-top: 4px;
+}
+.main-page .page-body .first .main-parent .first-parent .mean .pot .in {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-page .page-body .first .main-parent .first-parent .mean .pot .in2 {
+  padding-top: 4px;
+  font-size: 14px;
+  text-align: center;
+}
+.main-page .page-body .first .main-parent .first-parent .mean .pot a {
+  text-decoration: none;
+  color: #0061AB;
+}
+.main-page .page-body .first .main-parent .first-parent .mean .pot a:hover {
+  text-decoration: underline;
+}
+.main-page .page-body .first .main-parent .first-parent-register .form-group p {
+  padding-bottom: -10px;
+}
+.main-page .page-body .first .main-parent .first-parent-register .mean {
+  padding: 10px;
+}
+.main-page .page-body .first .main-parent .first-parent-register .mean .bolt {
+  color: red;
+}
+.main-page .page-body .first .main-parent .first-parent-register .mean .clay {
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+}
+.main-page .page-body .first .main-parent .first-parent-register .mean .clay .eel {
+  font-size: 10px;
+  color: red;
+  padding-left: 5px;
+}
+.main-page .page-body .first .main-parent .first-parent-register .mean .team {
+  display: flex;
+  width: 100%;
+  border: 1px solid gray;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+.main-page .page-body .first .main-parent .first-parent-register .mean .team input {
+  border: 0px;
+  width: 95%;
+  outline: 0px;
+}
+.main-page .page-body .first .main-parent .first-parent-register .mean .team input::placeholder {
+  font-size: 10px;
+}
+.main-page .page-body .first .main-parent .first-parent-register .mean .team button {
+  border: none;
+  background-color: transparent;
+  padding: 0px !important;
+}
+.main-page .page-body .first .main-parent .first-parent-register .mean .pass {
+  padding-left: 5px;
+}
+.main-page .page-body .first .main-parent .first-parent-register .mean .pass::placeholder {
+  font-size: 10px;
+  padding-left: 5px;
+}
+.main-page .page-body .first .main-parent .first-parent-register .mean .teal {
+  text-align: center;
+}
+.main-page .page-body .first .main-parent .first-parent-register .mean .teal h3 {
+  color: #0061AB;
+}
+.main-page .page-body .first .main-parent .first-parent-register .mean .teal p {
+  font-size: 13px;
+}
+.main-page .page-body .first .main-parent .first-parent-register .mean .signInEnter {
+  background-color: #0061AB;
+  color: #FFFFFF;
+  padding: 5px;
+  border: none;
+  font-weight: bold;
+  margin-top: 4px;
+  border-radius: 3px;
+}
+.main-page .page-body .second {
+  background-color: #D0DAE0;
+}
+.main-page .page-body .second .rain {
+  margin-top: 50px;
+  display: flex;
+  padding-top: 40px;
+  justify-content: space-around;
+}
+.main-page .page-body .second .rain .team a {
+  text-decoration: none !important;
+}
+.main-page .page-body .second .rain .team a p {
+  font-size: 11px;
+  line-height: 0.5;
+  color: grey;
+}
+.main-page .page-body .second .rain .team a p:hover {
+  text-decoration: underline;
+  color: #0e0e5a;
+}
+.main-page .page-body .second .rain .team h6 {
+  color: #0061AB;
+}
+.main-page .page-body .second .rain .card {
+  width: 200px;
+  background-color: transparent;
+  border: none !important;
+}
+.main-page .page-body .second .rain .ream {
+  display: none;
+}
+.main-page .page-body .second .ream {
+  display: none;
+}
+.main-page .page-body .third {
+  background-color: #0061AB;
+}
+.main-page .page-body .third .part {
+  padding: 10px;
+  display: flex;
+}
+.main-page .page-body .third .part .cent {
+  padding-left: 40%;
+}
+.main-page .page-body .third .part .cent p {
+  text-align: center !important;
+  color: #FFFFFF;
+}
+.main-page .page-body .third .part .third-end {
+  display: flex;
+  padding-left: 35%;
+  justify-content: flex-end;
+}
+.main-page .page-body .third .part .third-end a {
+  text-decoration: none;
+  margin-left: 10px;
+}
+.main-page .page-body .third .part .third-end .bay1 {
+  background-color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-page .page-body .third .part .third-end .bay2 {
+  color: #FFFFFF;
+}
+.main-page .page-body .third .part .third-end .bay3 {
+  background-color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  border-radius: 2px;
+}
+
+@media (max-width: 760px) {
+  .container-fluid, .container {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+
+  .parent {
+    width: 100% !important;
+  }
+  .parent .main-page .header {
+    padding-left: 3% !important;
+  }
+  .parent .main-page .header .left {
+    display: flex;
+    align-items: center;
+  }
+  .parent .main-page .header .left .bell {
+    margin-left: 30% !important;
+  }
+  .parent .main-page .header .show {
+    display: block !important;
+    padding-left: -10% !important;
+  }
+  .parent .main-page .header .head-right {
+    display: block !important;
+    margin: 0px !important;
+  }
+  .parent .main-page .header .head-right .awe2 {
+    margin-left: 0px !important;
+    margin-top: 3px;
+  }
+  .parent .main-page .page-body .first #carouselExampleIndicators .carousel-item, .parent .main-page .page-body .first #carouselExampleIndicators img {
+    height: 6cm;
+    z-index: -11111;
+  }
+  .parent .main-page .page-body .first .main-parent {
+    width: 100% !important;
+    margin-left: 0% !important;
+  }
+  .parent .main-page .page-body .first .main-parent .first-parent .teal p {
+    font-size: 12px;
+  }
+  .parent .main-page .page-body .first .main-parent .first-parent .pot .in {
+    font-size: 12px !important;
+  }
+  .parent .main-page .page-body .first .main-parent .first-parent .pot .in2 {
+    font-size: 12px !important;
+  }
+  .parent .main-page .page-body .first .first-parent-register {
+    width: 100% !important;
+    margin: auto !important;
+    padding: 5px !important;
+    margin-top: 10% !important;
+  }
+  .parent .main-page .page-body .first .first-parent-register .mean {
+    width: 100% !important;
+  }
+  .parent .main-page .page-body .first .first-parent-register .mean .teal p {
+    font-size: 12px;
+  }
+  .parent .main-page .page-body .second {
+    margin-top: 10px;
+  }
+  .parent .main-page .page-body .second .rain {
+    display: none;
+  }
+  .parent .main-page .page-body .second .ream {
+    padding: 10px;
+  }
+  .parent .main-page .page-body .second .ream a {
+    text-decoration: none !important;
+  }
+  .parent .main-page .page-body .second .ream a p {
+    font-size: 11px;
+    line-height: 0.5;
+    color: grey;
+  }
+  .parent .main-page .page-body .second .ream a p:hover {
+    text-decoration: underline;
+    color: #0e0e5a;
+  }
+  .parent .main-page .page-body .third .part {
+    display: block;
+  }
+  .parent .main-page .page-body .third .part .cent p {
+    text-align: center !important;
+    color: #FFFFFF;
+  }
+  .parent .main-page .page-body .third .part .third-end {
+    padding-left: 0% !important;
+  }
+}
+
+/*# sourceMappingURL=airline.css.map */

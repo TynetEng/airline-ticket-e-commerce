@@ -1,0 +1,504 @@
+$mainColor: #0061AB;
+$subColor: #D0DAE0;
+$branchColor: #FFFFFF;
+.container-fluid, .row{
+    padding: 0px;
+    margin: 0px;
+}
+.main-page{
+    width: 100%;
+    .header{
+        background-color: $branchColor;
+        height: 68px;
+        // .navbar{ 
+        //     padding: 5px;
+        //     position: fixed;  
+        //     top: 0;
+        //     margin: auto;
+        // }
+        .show{
+            display: flex;
+            margin-left: 35%;
+        }
+        img{
+            width: 200px;
+        }
+        ul{
+            color: $mainColor;
+            display: flex;
+            
+        }
+        .sideBar{
+            background: white;
+            top: 0;
+            left: -3% !important;
+            width: 55%;
+            height: 100vh;
+            position: absolute;
+            z-index: 1000;
+            box-shadow: rgba($color: #000000, $alpha: 1.0);
+            padding: 20px;
+            font-size: 17px;
+        }
+        .head-right{
+            display: flex;
+            .awe1{
+                background-color: $mainColor;
+                border: none;
+                border-radius: 5px;
+                padding: 5px 15px;
+                a{
+                    text-decoration: none !important;
+                    color: $branchColor;
+                }
+                &:hover{
+                    transition: all 1s;
+                    animation-timing-function: ease-in;
+                    border: 1px solid $mainColor !important;
+                    background-color: $branchColor;
+                    a{
+                        color: $mainColor;
+                    }
+                }
+            }
+            .awe2{
+                border: 1px solid $mainColor;
+                border-radius: 5px;
+                padding: 5px 15px;
+                margin-left: 10px;
+                background-color: $branchColor;
+                a{
+                    color: $mainColor;
+                    text-decoration: none;
+                }
+                &:hover{
+                    transition: all 1s;
+                    animation-timing-function: ease-in;
+                    border: 1px solid $mainColor !important;
+                    background-color: $mainColor;
+                    a{
+                        color: $branchColor;
+                    }
+                }
+            }
+        }
+    }
+    .page-body{
+        .first{
+            #carouselExampleIndicators{
+                .carousel-item, img{
+                    height: 17cm;
+                    z-index: -11111;
+
+                }
+            }
+            .first-front{
+                position: absolute;
+                margin-top: -50%;
+                color: $branchColor;
+                margin-left: 10%;
+                .bab{
+                    background-color: $branchColor;
+                    border-radius: 5px;
+                    width: 35%;
+                    padding: 5px;
+                    input{
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                    }
+                    i{
+                        color: black;
+                    }
+                }
+                .bob{
+                    background-color: $mainColor;
+                    border: none;
+                    color: $branchColor;
+                    padding: 5px 15px;
+                    border-radius: 5px;
+                    margin-left: 10px;
+                    &:hover{
+                        transition: all 1s;
+                        animation-timing-function: ease-in;
+                        border: 1px solid $mainColor !important;
+                        background-color: $branchColor;
+                        color: $mainColor;
+                    }
+                }
+            }
+            .main-parent{
+                margin-left: 35% !important;
+                position: absolute;
+                margin-top: -40%; 
+                width: 30%;
+                .first-parent{
+                    .mean{
+                        padding: 10px;
+                        .bolt{
+                            color: red;
+                        }
+                        .team{
+                            display: flex;
+                            width: 100%;
+                            border: 1px solid gray;
+                            align-items: center;
+                            padding: 5px;
+                            border-radius: 5px;
+                            input{
+                                border: 0px;
+                                width: 95%;
+                                outline: 0px;
+                                &::placeholder{
+                                    font-size: 10px;
+                                }
+                            }
+                            button{
+                                border: none;
+                                background-color: transparent;
+                                padding: 0px !important;
+                            }
+                        }
+                        .pass{
+                            padding-left: 5px;
+                            &::placeholder{
+                                font-size: 10px;
+                                padding-left: 5px;
+                            }
+                        }
+                        .teal{
+                            text-align: center;
+                            h3{
+                                color: $mainColor;
+                            }
+                            p{
+                                font-size: 13px;
+                            }
+                        }
+                        .clay{
+                            display: flex;
+                            align-items: center;
+                            padding-top: 5px;
+                            .checkbox{
+                                width: 20px;
+                                border-radius: 5px;
+                                height: 20px;
+                                border: 1px solid grey;
+                            }
+                            span{
+                                padding-left: 4px;
+                            }
+                        }
+                        .logIn{
+                            background-color: $mainColor;
+                            color: $branchColor;
+                            padding: 5px;
+                            border: none;
+                            font-weight: bold;
+                            margin-top: 4px;
+                            border-radius: 3px;
+                        }
+                        .pot{
+                            padding-top: 4px;
+                            .in{
+                                font-size: 14px;
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            .in2{
+                                padding-top: 4px;
+                                font-size: 14px;
+                                text-align: center;
+                            }
+                            a{
+                                text-decoration: none;
+                                color: $mainColor;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                .first-parent-register{
+                    .form-group{
+                        p{
+                            padding-bottom: -10px;
+                        }
+                    }
+                    .mean{
+                        padding: 10px;
+                        .bolt{
+                            color: red;
+                        }
+                        .clay{
+                            padding-top: 5px;
+                            display: flex;
+                            align-items: center;
+                            .eel{
+                                font-size: 10px;
+                                color: red;
+                                padding-left: 5px;
+                            }
+                        }
+                        .team{
+                            display: flex;
+                            width: 100%;
+                            border: 1px solid gray;
+                            align-items: center;
+                            padding: 5px;
+                            border-radius: 5px;
+                            input{
+                                border: 0px;
+                                width: 95%;
+                                outline: 0px;
+                                &::placeholder{
+                                    font-size: 10px;
+                                }
+                            }
+                            button{
+                                border: none;
+                                background-color: transparent;
+                                padding: 0px !important;
+                            }
+                        }
+                        .pass{
+                            padding-left: 5px;
+                            &::placeholder{
+                                font-size: 10px;
+                                padding-left: 5px;
+                            }
+                        }
+                        .teal{
+                            text-align: center;
+                            h3{
+                                color: $mainColor;
+                            }
+                            p{
+                                font-size: 13px;
+                            }
+                        }
+                        .signInEnter{
+                            background-color: $mainColor;
+                            color: $branchColor;
+                            padding: 5px;
+                            border: none;
+                            font-weight: bold;
+                            margin-top: 4px;
+                            border-radius: 3px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        
+        .second{
+            background-color: $subColor;
+            .rain{ 
+                margin-top: 50px;
+                display: flex;
+                padding-top: 40px;
+                justify-content: space-around;
+                .team{
+                    a{
+                        text-decoration: none !important;
+                        p{
+                            font-size: 11px;
+                            line-height: 0.5;
+                            color: grey;
+                            &:hover{
+                                text-decoration: underline;
+                                color: rgb(14, 14, 90);
+                            }
+                        }
+                    }
+                    h6{
+                        color: $mainColor;
+                    }
+                }
+                .card{
+                    width: 200px;
+                    background-color: transparent;
+                    border: none !important;
+                }
+                .ream{
+                    display: none;
+                }
+            }
+            .ream{
+                display: none;
+            }
+        }
+        .third{
+            background-color: $mainColor;
+            .part{
+                padding: 10px;
+                display: flex;
+                .cent{
+                    padding-left: 40%;
+                    p{
+                        text-align: center !important;
+                        color: $branchColor;
+                       
+                    }
+                }
+                .third-end{
+                    display: flex;
+                    padding-left: 35%;
+                    justify-content: flex-end;
+                    a{
+                        text-decoration: none;
+                        margin-left: 10px;
+                    }
+                    .bay1{
+                        background-color: $branchColor;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .bay2{
+                        color: $branchColor;
+                    }
+                    .bay3{
+                        background-color: $branchColor;
+                        width: 20px;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 10px;
+                        border-radius: 2px;
+                    }
+                }
+            
+            }
+        }
+    }
+}
+
+
+@media(max-width:760px){
+    .container-fluid, .container{
+        padding: 0px !important;
+        margin: 0px !important;
+  
+    }
+    .parent{
+        width: 100% !important;
+        .main-page{
+            .header{
+                padding-left: 3% !important;
+                .left{
+                    display: flex;
+                    align-items: center;
+                    .bell{
+                        margin-left: 30% !important;
+                    }
+                }
+                .show{
+                    display: block !important;
+                    padding-left: -10% !important;
+                }
+                .head-right{
+                    display: block !important;
+                    margin: 0px !important;
+                    .awe2{
+                        margin-left: 0px !important;
+                        margin-top: 3px;
+                    }
+                }
+            }
+            .page-body{
+                .first{
+                    #carouselExampleIndicators{
+                        .carousel-item, img{
+                            height: 6cm;
+                            z-index: -11111;
+        
+                        }
+                    }
+                    .main-parent{
+                        width: 100% !important;
+                        margin-left: 0% !important;
+                        .first-parent{ 
+                            .teal{
+                                p{
+                                    font-size: 12px;
+                                }
+                            }
+                            .pot{
+                                
+                                .in{
+                                    font-size: 12px !important;
+                                }
+                                .in2{
+                                    font-size: 12px !important;
+                                }
+                            }
+                        }
+                    }
+                    
+                    .first-parent-register{
+                        width: 100% !important;
+                        margin: auto !important;
+                        padding: 5px !important;
+                        margin-top: 10% !important;
+                        .mean{
+                            width: 100% !important;
+                            .teal{
+                                p{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .second{
+                    margin-top: 10px;
+                    .rain{
+                        display: none;
+                    }
+                    .ream{
+                        padding: 10px;
+                        a{
+                            text-decoration: none !important;
+                            p{
+                                font-size: 11px;
+                                line-height: 0.5;
+                                color: grey;
+                                &:hover{
+                                    text-decoration: underline;
+                                    color: rgb(14, 14, 90);
+                                }
+                            }
+                        }
+                    }
+                }
+                .third{
+                    .part{
+                        display: block;
+                        .cent{
+                            p{
+                                text-align: center !important;
+                                color: $branchColor;
+                            }
+                        }
+                        .third-end{
+                            padding-left: 0% !important;
+                            
+                        }
+                    
+                    }
+                }
+            }
+        }
+    }
+}

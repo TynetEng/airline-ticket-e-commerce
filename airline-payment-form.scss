@@ -1,0 +1,165 @@
+$mainColor: #0061AB;
+$subColor: #D0DAE0;
+$branchColor: #FFFFFF;
+$textColor: grey;
+.container-fluid, .row{
+    margin: 0px;
+    padding: 0px;
+}
+.parent{
+    width: 350px;
+    margin: auto;
+    margin-top: 150px;
+    padding-top: 110px;
+    position: relative;
+}
+.cvv{
+    border: 1px solid $subColor;
+    width: 60px;
+    border-radius: 5px;
+}
+.btn{
+    background-color: $mainColor;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.show{
+    display: flex;
+    justify-content: space-between;
+}
+.fill{
+    display: flex;
+    justify-content: space-between;
+    select{
+        border: 1px solid $subColor;
+        border-radius: 5px;
+    }
+}
+input{
+    border-radius: 5px;
+    border: 1px solid $subColor;
+}
+input:focus{
+    border: 1px solid skyblue;
+    outline: 1px solid skyblue;
+    border-radius: 5px !important;
+}
+.team{
+    margin-top: 20px;
+    p{
+        position: absolute;
+        padding-left: 10px;
+    }
+}
+.atm-card{
+    width: 320px;
+    margin-left: 38.4% !important;
+    border-radius: 10px;
+    z-index: 1000;
+    margin-top: -130px !important;
+    position: absolute;
+    color: white;
+    height: 220px;
+    background: url('./Images/red.jpeg');
+
+    .show-name{
+        padding-top: 170px;
+        padding-left: 10px;
+        span{
+            font-size: 15px;
+        }
+    }
+    .show-expiry{
+        padding-top: 170px;
+        
+        span{
+            font-size: 15px;
+            padding-left: -10px !important;
+        }
+        p{
+            span{
+                font-size: 14px;
+            }
+        }
+    }
+    .number{
+        border: 2px solid $subColor;
+        border-radius: 10px;
+        width: 200px;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        height: 40px;
+        margin: auto;
+        margin-top: 110px;
+        margin-left: 10px;
+        position: absolute;
+    }
+    .enter{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.checkout{
+    margin: auto;
+    position: absolute;
+    .modal-body{
+        padding-top: -50px !important;
+        #search{
+            text-align: center;
+            color: $mainColor;
+        }
+        .checkoutFinal{
+            background-color: $mainColor;
+            color: $branchColor;
+            padding: 5px;
+            border: none;
+            font-weight: bold;
+            margin-top: 4px;
+            border-radius: 3px;
+        }
+    }   
+}
+.checkoutPage{
+    margin: auto;
+    position: absolute;
+    .modal-body{
+        padding-top: -50px !important;
+        #search{
+            text-align: center;
+            color: $mainColor;
+            .fromAirport, .toAirport{
+                color: $mainColor;
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+        .checkoutFinal{
+            background-color: $mainColor;
+            color: $branchColor;
+            padding: 5px;
+            border: none;
+            font-weight: bold;
+            margin-top: 4px;
+            border-radius: 3px;
+        }
+    }   
+}
+@media(max-width:760px){
+    .container-fluid, .row{
+        margin: 0px;
+        padding: 0px;
+    }
+    .parent{
+        width: 100% !important;
+        margin: 0px;
+        margin-top: 150px;
+    }
+    .atm-card{
+        width: 90% !important;
+        margin-left: 5% !important;
+        margin-top: 40px;
+    }
+}
+
