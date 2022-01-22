@@ -181,7 +181,7 @@
                                     <div class="form-group">
                                         <label>Password <span class="bolt">*</span></label>
                                         <div class="team">
-                                            <input type="password" class="w-100 inputPass" placeholder="Enter your password" required>
+                                            <input type="password" class="w-100 inputPass"  placeholder="Minimun of 8 characters with at least 2 digits and a symbol i.e. #,@" required>
                                             <i class="fa fa-eye toggleEye"></i>
                                         </div>
                                     </div>
@@ -191,7 +191,7 @@
                                     </div>
                                     <div class="clay">
                                         <input type="checkbox">
-                                        <span class="eel">I agree to the terms and conditions of American Airline</span>
+                                        <span class="eel">I agree to the terms and conditions of American Airlines</span>
                                     </div>
                                     <div>
                                         <button class="signInEnter w-100" type="submit">SIGN IN</button>
@@ -293,6 +293,7 @@
                 }
             }
 
+
             function validatePhoneNum(){
                 let pnb = $('.phone-number').val()
                 let regex = /[+]{1}[2]{1}[3]{1}[4]{1}[0-9]{10}/; 
@@ -313,36 +314,44 @@
                 validatePassword()
                 validatePhoneNum()
 
-                let passengerDetails = {
+                if($('.firstName').val()!='' && $('.lastName').val()!='' && $('.email').val()!='' && $('.inputPass').val()!=''){
+                    $('.first-parent').show()
+                    $('.first-parent-register').hide()
+
+                    let passengerDetails = {
                     firstName: $('.firstName').val(),
                     lastName: $('.lastName').val(),
                     Email: $('.email').val(),
                     password: $('.inputPass').val(),
                     phoneNumber: $('.phone-number').val()
 
-                }
-                details.push(passengerDetails)
+                    }
+                    details.push(passengerDetails)
 
-                localStorage.setItem('Passenger Details', JSON.stringify(details));
-                let a = localStorage.getItem('Passenger Details') ;
-                console.log(JSON.parse(a));
-                $('.first-parent').show()
-                $('.first-parent-register').hide()
+                    localStorage.setItem('Passenger Details', JSON.stringify(details));
+                    // let a = localStorage.getItem('Passenger Details') ;
+                    // console.log(JSON.parse(a));
+                }
+                else if($('.firstName').val()=='' && $('.lastName').val()=='' && $('.email').val()=='' && $('.inputPass').val()==''){
+                    $('.signInEnter').attr('disabled', true);
+                }
+
+                
             })
             $('.logIn').click(function(){
-                if($('.username').val() != $('.firstName').val() || $('.log-in-password').val() != $('.phone-number').val()){
+                if($('.username').val() != $('.firstName').val() && $('.log-in-password').val() != $('.inputPass').val() && $('.username').val()==''  && $('.log-in-password').val()==''){
                     $('.logIn').attr('disabled', true)
-                    console.log('abc')
                 }
                 else{
-                    window.location.href = './airline-payment-form.html'
-                    console.log(123)
+                    window.location.href = './airline-payment-form.html';
                 }
-                window.location.href = './airline-payment-form.html'
+                
             })
             $('#openSideBar').click(function(){
                 $('.sideBar').toggle()   
             })
+
+            
         })
     </script>
 </body>
