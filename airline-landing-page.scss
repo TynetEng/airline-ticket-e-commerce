@@ -84,8 +84,12 @@ $textColor: grey;
             color: $branchColor;
             font-weight: bolder;
             margin-left: 10%;
+            .trav{
+                text-shadow: 2px 2px black;
+            }
             .dew{
                 color: $mainColor;
+                text-shadow: 2px 2px black;
             }
             .bab{
                 background-color: $branchColor;
@@ -917,10 +921,11 @@ $textColor: grey;
         }
         .third-part{
             h3{
-                padding-left: 10px;
+                text-align: center;
             }
             .bear{
                 display: block !important;
+                margin-left: 8% !important;
                 .bear1, .bear2{
                     width: 80% !important;
                     margin: 10px !important;
@@ -1030,7 +1035,7 @@ $textColor: grey;
                 width: 100%;
                 .tan{
                     margin-top: 5px !important;
-                    margin-left: 2%;
+                    margin-left: 8.5%;
                     .teet{
                         margin-top: -52% !important;
                         padding-top: 10px;
