@@ -71,8 +71,12 @@
   font-weight: bolder;
   margin-left: 10%;
 }
+.parent #carouselExampleIndicators .first-front .trav {
+  text-shadow: 2px 2px black;
+}
 .parent #carouselExampleIndicators .first-front .dew {
   color: #0061AB;
+  text-shadow: 2px 2px black;
 }
 .parent #carouselExampleIndicators .first-front .bab {
   background-color: #FFFFFF;
@@ -875,10 +879,11 @@
     width: 100% !important;
   }
   .parent .third-part h3 {
-    padding-left: 10px;
+    text-align: center;
   }
   .parent .third-part .bear {
     display: block !important;
+    margin-left: 8% !important;
   }
   .parent .third-part .bear .bear1, .parent .third-part .bear .bear2 {
     width: 80% !important;
@@ -985,7 +990,7 @@
   }
   .parent .seventh .klin .tan {
     margin-top: 5px !important;
-    margin-left: 2%;
+    margin-left: 8.5%;
   }
   .parent .seventh .klin .tan .teet {
     margin-top: -52% !important;
