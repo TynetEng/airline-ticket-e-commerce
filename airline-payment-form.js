@@ -180,12 +180,10 @@ $(function(){
         for(let i=0; i< showFlightMobile.length; i++){
             let b = showFlightMobile[i].originAirport
             $('.fromAirport').html(b)
-            console.log(b);
         }
         for(let i=0; i< showFlightMobile.length; i++){
             let b = showFlightMobile[i].destinationAirport
             $('.toAirport').html(b);
-            console.log(b);
         }
     }
 
@@ -246,11 +244,9 @@ $(function(){
         let check = regex.test(cardNumber);
         if (!check || regex > 16 || regex < 16) {
             result.innerHTML = `invalid card number`
-            console.log(result);
         }
         else {
             result.innerHTML = `valid card number`
-            console.log(result);
         }
     }
     

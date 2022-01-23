@@ -129,12 +129,15 @@
                                         <p> You can log in with your Aadvantage number or username <br> and password</p>
                                     </div>
                                     <div class="form-group">
-                                        <label>AAdvantage First Name <span class="bolt">*</span></label>
+                                        <label>Email <span class="bolt">*</span></label>
                                         <input type="text" class="w-100 username" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Password <span class="bolt">*</span></label>
-                                        <input type="password" class="w-100 log-in-password" placeholder="Minimun of 8 characters with at least 2 digits and a symbol i.e. #,@" required>
+                                        <div class="team">
+                                            <input type="password" class="w-100 log-in-password"  placeholder="Minimun of 8 characters with at least 2 digits and a symbol i.e. #,@" required>
+                                            <i class="fa fa-eye toggleEye2"></i>
+                                        </div>
                                     </div>
                                     <div class="clay">
                                         <input type="checkbox">
@@ -167,12 +170,8 @@
                                         <h3>Sign Up</h3>
                                     </div>
                                     <div class="form-group">
-                                        <label>First Name <span class="bolt">*</span></label>
+                                        <label>Full Name <span class="bolt">*</span></label>
                                         <input type="text" class="w-100 firstName" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Last Name <span class="bolt">*</span></label>
-                                        <input type="text" class="w-100 lastName" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Email <span class="bolt">*</span></label>
@@ -277,7 +276,6 @@
             $('.sideBar').hide()
             if(localStorage.getItem('Passenger Details')){
                 let c = localStorage.getItem('Passenger Details')
-                console.log(JSON.parse(c));
                 details = JSON.parse(c)
             }
             $('.first-parent').hide()
@@ -306,15 +304,19 @@
                 }
             }
 
-            $('body').on('click', '.toggleEye', function(){
+            $('.toggleEye').on('click', function(){
                 $(this).toggleClass('.toggleEye')
                 $('.inputPass').attr('type') ==='password'? $('.inputPass').attr('type', 'text')  : $('.inputPass').attr('type', 'password') 
+            })
+            $('.toggleEye2').on('click', function(){
+                $(this).toggleClass('.toggleEye2')
+                $('.log-in-password').attr('type') ==='password'? $('.log-in-password').attr('type', 'text')  : $('.log-in-password').attr('type', 'password') 
             })
             $('.signInEnter').click(function(){
                 validatePassword()
                 validatePhoneNum()
 
-                if($('.firstName').val()!='' && $('.lastName').val()!='' && $('.email').val()!='' && $('.inputPass').val()!=''){
+                if($('.firstName').val()!='' && $('.email').val()!='' && $('.inputPass').val()!=''){
                     $('.first-parent').show()
                     $('.first-parent-register').hide()
 
@@ -329,22 +331,30 @@
                     details.push(passengerDetails)
 
                     localStorage.setItem('Passenger Details', JSON.stringify(details));
-                    // let a = localStorage.getItem('Passenger Details') ;
-                    // console.log(JSON.parse(a));
                 }
-                else if($('.firstName').val()=='' && $('.lastName').val()=='' && $('.email').val()=='' && $('.inputPass').val()==''){
+                else if($('.firstName').val()=='' && $('.email').val()=='' && $('.inputPass').val()==''){
                     $('.signInEnter').attr('disabled', true);
                 }
 
                 
             })
             $('.logIn').click(function(){
-                if($('.username').val() != $('.firstName').val() && $('.log-in-password').val() != $('.inputPass').val() && $('.username').val()==''  && $('.log-in-password').val()==''){
-                    $('.logIn').attr('disabled', true)
+                let a = localStorage.getItem('Passenger Details');
+                details = JSON.parse(a)
+                
+                for(i=0; i<details.length; i++){
+                    let b = details[i].password;
+                    let c = details[i].Email;
+                    
+                    if($('.username').val() != c && $('.log-in-password').val() != b && $('.username').val()==''  && $('.log-in-password').val()==''){
+                        $('.logIn').attr('disabled', true)
+                    }
+                    else if($('.username').val() == c && $('.log-in-password').val() == b && $('.username').val()!=''  && $('.log-in-password').val()!=''){
+                        window.location.href = './airline-payment-form.html';
+                    }
                 }
-                else{
-                    window.location.href = './airline-payment-form.html';
-                }
+                
+                
                 
             })
             $('#openSideBar').click(function(){

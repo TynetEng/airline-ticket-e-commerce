@@ -6,6 +6,10 @@
 .parent .header {
   background-color: #FFFFFF;
   height: 68px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 .parent .header .show {
   display: flex;
@@ -709,6 +713,10 @@
   }
   .parent .header {
     padding-left: 3% !important;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100%;
+    z-index: 1000;
   }
   .parent .header .sideBar {
     background: white;
@@ -1068,6 +1076,10 @@
   }
   .parent .second .rain .team {
     padding-left: 10px;
+  }
+  .parent .second .rain .card:hover {
+    transition: none;
+    transform: none;
   }
   .parent .third {
     width: 100%;
