@@ -124,9 +124,7 @@ $(document).ready(function(){
         showFlight.push(flightDetails)
 
         localStorage.setItem('Book Flight', JSON.stringify(showFlight));
-        let a = localStorage.getItem('Book Flight') ;
-        console.log(JSON.parse(a));
-        console.log(destinationAirport);
+        let a = localStorage.getItem('Book Flight') ; 
         window.location.href = './airline.html'
     })
 

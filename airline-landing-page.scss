@@ -10,6 +10,10 @@ $textColor: grey;
     .header{
         background-color: $branchColor;
         height: 68px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
         // .navbar{ 
         //     padding: 5px;
         //     position: fixed;  
@@ -741,6 +745,10 @@ $textColor: grey;
         margin: 0px !important;
         .header{
             padding-left: 3% !important;
+            position: fixed !important;
+            top: 0 !important;
+            width: 100%;
+            z-index: 1000;
             .sideBar{
                 background: white;
                 top: 0;
@@ -1115,6 +1123,12 @@ $textColor: grey;
                 padding: 10px;
                 .team{
                     padding-left: 10px;
+                }
+                .card{
+                    &:hover{
+                        transition: none;
+                        transform: none;
+                    }
                 }
             }
         }
