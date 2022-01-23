@@ -11,6 +11,9 @@
   display: flex;
   margin-left: 35%;
 }
+.parent .header .sideBar {
+  display: none;
+}
 .parent .header img {
   width: 200px;
 }
