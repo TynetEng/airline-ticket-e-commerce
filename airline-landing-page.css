@@ -5,8 +5,10 @@
 
 .parent .header {
   background-color: #FFFFFF;
-  height: 68px;
+  height: 50px;
   position: fixed;
+  display: flex;
+  align-items: center;
   top: 0;
   width: 100%;
   z-index: 1000;
@@ -714,7 +716,7 @@
   .parent .header {
     padding-left: 3% !important;
     position: fixed !important;
-    top: 0 !important;
+    top: auto !important;
     width: 100%;
     z-index: 1000;
   }

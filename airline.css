@@ -8,7 +8,12 @@
 }
 .main-page .header {
   background-color: #FFFFFF;
-  height: 68px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 .main-page .header .show {
   display: flex;
