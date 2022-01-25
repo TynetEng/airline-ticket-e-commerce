@@ -1,1 +1,1 @@
-# airline-ticket-e-commerce is an American Airlines website where users can book their flights from departure airport to a destination airport, check available flights, make payment and then checkout.
+# airline-ticket-e-commerce is an American Airlines booking website where users can book their flights from departure airport to a destination airport, check available flights, make payment and then checkout.
